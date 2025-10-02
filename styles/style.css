@@ -1,14 +1,14 @@
 .grid-container {
     display: grid;
     grid-template-columns: 225px minmax(300px,4fr);
-    grid-template-rows: 125px 3fr;
+    grid-template-rows: 100px 3fr;
     height: 500px;
 }
 
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 50px;
+    grid-template-rows: 1fr 1fr;
     background-color: white;
     border: 1px solid black;
     padding: 10px;
@@ -16,8 +16,6 @@
     grid-row: 1;
 }
 
-.search-container,
-.widget-container,
 .profile-container,
 .project-controls-container {
     align-self: end;
