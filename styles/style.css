@@ -2,13 +2,37 @@
     display: grid;
     grid-template-columns: 225px minmax(300px,4fr);
     grid-template-rows: 125px 3fr;
+    height: 500px;
 }
 
 .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px;
     background-color: white;
     border: 1px solid black;
     grid-column: 2;
     grid-row: 1;
+}
+
+.search-container,
+.widget-container,
+.profile-container,
+.project-controls-container {
+    align-self: end;
+}
+
+.widget-container,
+.project-controls-container {
+    justify-self: end;
+}
+
+.profile-container {
+
+}
+
+.project-controls-container {
+
 }
 
 .sidebar {
@@ -81,4 +105,8 @@
     grid-column: 2;
     grid-row: 5 / 7;
     background-color: yellow;
+}
+
+div {
+    display: inline-block;
 }
