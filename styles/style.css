@@ -43,10 +43,6 @@
     justify-self: end;
 }
 
-.profile-container {
-
-}
-
 .project-controls-container {
     display: flex;
     justify-content: end;
@@ -118,12 +114,18 @@
     flex-direction: column;
     justify-content: space-around;
     background-color: white;
+    padding-top: 14px;
+    padding-bottom: 14px;
     padding-left: 24px;
     padding-right: 14px;
     gap: 4px;
     box-shadow: 1px 2px 5px -2px black,
         inset 10px 0px 0px 0px rgb(255, 191, 72);
     border-radius: 4px 8px 8px 4px;
+}
+
+.card-header {
+    font-weight: bold;
 }
 
 .card-body {
@@ -141,10 +143,28 @@
 }
 
 .announcements-container {
+    display: flex;
+    flex-direction: column;
+    
     grid-column: 2;
     grid-row: 2 / 4;
+    padding: 24px;
 
-    background-color: yellow;
+    background-color: white;
+}
+
+.announcements-slice {
+    flex: 1;
+    align-content: center;
+}
+
+.announcements-slice + .announcements-slice {
+    border-top: 1px solid rgb(0 0 0 / 10%);
+}
+
+.slice-header {
+    display: block;
+    font-weight: bold;
 }
 
 .trending-heading {
