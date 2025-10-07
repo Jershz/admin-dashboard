@@ -9,7 +9,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 225px minmax(300px,4fr);
+    grid-template-columns: 225px minmax(400px,4fr);
     grid-template-rows: 150px repeat(auto-fill, 1fr);
     height: 100vh;
 }
